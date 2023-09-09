@@ -1,31 +1,71 @@
-<!DOCTYPE html><!-- TODO 1: Create the HTML Boilerplate -->
-<html lan='en'>
-    <head>
-  <meta charset="UTF-8">
-  <title>Angela's Portfolio</title>
-    </head>
-    <body>
-        <h1>sheethal project</h1>
-        <h2>basic project</h2>
-        <hr/>
-        <a href="../2.1 Heading Element/index.html">my project1</a><br/>
-        <a href="../2.2 Paragraph Element/index.html">my project2</a><br/>
-        <a href="../2.3 Void Elements/index.html">my project3</a><br/>
-        <a href="../2.4 Movie Ranking Project/index.html">my project4</a><br/>
-        <a href="../3.0 List Elements/index.html">my project5</a><br/>
-    </body>
-
+<!DOCTYPE html>
+<html >
+<head>
+    <title>resort</title>
+ 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" 
+    rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>" Crystal Resort "</h1>
+            <h4><i>"make your day a memorable"</i></h4>
+            <button type="button"><span></span>view room details</button>
+        </div> 
+    </header>
+<div id="sidenav">
+    <nav>
+        <ul>
+     <li><a href="./index.html"><img src="./logo1.png" width="30" height="30">  Home</a></li>
+    <li><a href="./about.html"><img src="./logo2.png" width="30" height="30">  About us</a></li>
+<li><a href="./bookrooms.html"><img src="./logo4.jpg" width="30" height="30">  Book a room </a></li>
+ <li><a><img src="./logo3.png" width="30" height="30">  Help  </a></li>
+        </ul>
+    </nav></div>
+<div id="menubtn">
+    <img src="./menu button.png" id="menu" >
+</div>
+<script>
+    var menubtn = document.getElementById("menubtn")
+    var sidenav = document.getElementById("sidenav")
+    var menu = document.getElementById("menu")
+     sidenav.style.right="-250px";
+      menubtn.onclick = function(){
+        if(sidenav.style.right == "-250px"){
+            sidenav.style.right="0";
+            menu.src ="close.png";
+        }
+        else{
+            sidenav.style.right = "-250px";
+            menu.src ="./menu button.png";
+        }
+    }
+</script>
+<marquee behavior="alternate" bgcolor="lightblue"  height="30px"> Book your rooms online 
+    now</marquee> 
+<section id="feature">
+    <div class="title-text">
+        <p>features</p>
+        <h2>our location getting here</h2>
+    <br>
+        The crystal resort , Bangalore<br>
+        97 Residency Road, Bengaluru,Karnataka,India,560 025<br/>
+        Tel: +91 78-8754 9000<br>
+        <br><h2>Our Service and Facilities</h2><br>
+          Clean and hygienic rooms<br>
+          Game rooms<br>
+          Swimming pool<br>
+          Gym<br>
+          A restaurant<br>
+          pampering treatments <br>
+         <br> <h2>Follow us on</h2><br>
+          <img src="./image1.png" width="20" height="20" align="center">
+          <img src="./img2.png"  width="30" height="30" align="center">
+          <img src="./img3.png"  width="20" height="20" align="center">
+          <img src="./img4.png"  width="20" height="20" align="center">
+    </div>
+</section>
+</body>
 </html>
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
